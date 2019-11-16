@@ -1,12 +1,22 @@
 package com.test.ssm.pojo;
+<<<<<<< HEAD
 
 /**
  * @author zhu
  *
+=======
+/*
+ * 订单类
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728
  */
 public class Order {
     private String id;
 
+<<<<<<< HEAD
+=======
+    private String publish;
+
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728
     private String cardid;
 
     private String account;
@@ -17,6 +27,7 @@ public class Order {
 
     private Integer status;
 
+<<<<<<< HEAD
     private User user;
     
     
@@ -29,6 +40,9 @@ public class Order {
 	}
 
 	public String getId() {
+=======
+    public String getId() {
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728
         return id;
     }
 
@@ -36,6 +50,17 @@ public class Order {
         this.id = id == null ? null : id.trim();
     }
 
+<<<<<<< HEAD
+=======
+    public String getPublish() {
+        return publish;
+    }
+
+    public void setPublish(String publish) {
+        this.publish = publish == null ? null : publish.trim();
+    }
+
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728
     public String getCardid() {
         return cardid;
     }

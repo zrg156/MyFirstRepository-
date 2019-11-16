@@ -1,5 +1,6 @@
 package com.test.ssm.controller;
 
+<<<<<<< HEAD
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,12 +21,18 @@ import com.test.ssm.service.CardOrderService;
 import com.test.ssm.service.CardService;
 import com.test.ssm.service.UserService;
 import com.test.ssm.util.MyUtil;
+=======
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestMapping;
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728
 
 @Controller
 @CrossOrigin
 @RequestMapping("/order")
 public class OrderController {
 
+<<<<<<< HEAD
 	@Autowired
 	CardOrderService cardOrderService;
 	@Autowired
@@ -125,3 +132,6 @@ public class OrderController {
 						}
 				}
 			}
+=======
+}
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728

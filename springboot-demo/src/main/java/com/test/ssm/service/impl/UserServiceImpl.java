@@ -81,6 +81,7 @@ public class UserServiceImpl implements UserService {
 		return  userMapper.selectByPrimaryKey(account);
 	}
 	
+<<<<<<< HEAD
 	
 	//查询一个user集合
 	@Override
@@ -127,4 +128,6 @@ public class UserServiceImpl implements UserService {
 			return Result.failMessage(400, "不存在该用户！");
 	}
 	
+=======
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728
 }

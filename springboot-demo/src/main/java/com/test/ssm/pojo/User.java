@@ -1,5 +1,13 @@
 package com.test.ssm.pojo;
+<<<<<<< HEAD
 
+=======
+/**
+ * 用户类
+ * @author zhu
+ *
+ */
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728
 public class User {
     private String account;
 
@@ -21,8 +29,11 @@ public class User {
 
     private String mailbox;
 
+<<<<<<< HEAD
     private String no;
 
+=======
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728
     public String getAccount() {
         return account;
     }
@@ -102,6 +113,7 @@ public class User {
     public void setMailbox(String mailbox) {
         this.mailbox = mailbox == null ? null : mailbox.trim();
     }
+<<<<<<< HEAD
 
     public String getNo() {
         return no;
@@ -110,4 +122,6 @@ public class User {
     public void setNo(String no) {
         this.no = no == null ? null : no.trim();
     }
+=======
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728
 }

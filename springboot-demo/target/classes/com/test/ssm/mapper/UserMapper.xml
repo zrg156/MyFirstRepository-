@@ -12,7 +12,10 @@
     <result column="permission" property="permission" jdbcType="INTEGER" />
     <result column="address" property="address" jdbcType="VARCHAR" />
     <result column="mailbox" property="mailbox" jdbcType="VARCHAR" />
+<<<<<<< HEAD
     <result column="no" property="no" jdbcType="VARCHAR" />
+=======
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728
   </resultMap>
   <sql id="Example_Where_Clause" >
     <where >
@@ -73,8 +76,12 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
+<<<<<<< HEAD
     account, password, name, sex, age, et_back, school, permission, address, mailbox, 
     no
+=======
+    account, password, name, sex, age, et_back, school, permission, address, mailbox
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.test.ssm.pojo.UserExample" >
     select
@@ -109,12 +116,21 @@
   <insert id="insert" parameterType="com.test.ssm.pojo.User" >
     insert into test_user (account, password, name, 
       sex, age, et_back, school, 
+<<<<<<< HEAD
       permission, address, mailbox, 
       no)
     values (#{account,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
       #{sex,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER}, #{etBack,jdbcType=VARCHAR}, #{school,jdbcType=VARCHAR}, 
       #{permission,jdbcType=INTEGER}, #{address,jdbcType=VARCHAR}, #{mailbox,jdbcType=VARCHAR}, 
       #{no,jdbcType=VARCHAR})
+=======
+      permission, address, mailbox
+      )
+    values (#{account,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
+      #{sex,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER}, #{etBack,jdbcType=VARCHAR}, #{school,jdbcType=VARCHAR}, 
+      #{permission,jdbcType=INTEGER}, #{address,jdbcType=VARCHAR}, #{mailbox,jdbcType=VARCHAR}
+      )
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728
   </insert>
   <insert id="insertSelective" parameterType="com.test.ssm.pojo.User" >
     insert into test_user
@@ -149,9 +165,12 @@
       <if test="mailbox != null" >
         mailbox,
       </if>
+<<<<<<< HEAD
       <if test="no != null" >
         no,
       </if>
+=======
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="account != null" >
@@ -184,9 +203,12 @@
       <if test="mailbox != null" >
         #{mailbox,jdbcType=VARCHAR},
       </if>
+<<<<<<< HEAD
       <if test="no != null" >
         #{no,jdbcType=VARCHAR},
       </if>
+=======
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728
     </trim>
   </insert>
   <select id="countByExample" parameterType="com.test.ssm.pojo.UserExample" resultType="java.lang.Integer" >
@@ -228,9 +250,12 @@
       <if test="record.mailbox != null" >
         mailbox = #{record.mailbox,jdbcType=VARCHAR},
       </if>
+<<<<<<< HEAD
       <if test="record.no != null" >
         no = #{record.no,jdbcType=VARCHAR},
       </if>
+=======
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728
     </set>
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
@@ -247,8 +272,12 @@
       school = #{record.school,jdbcType=VARCHAR},
       permission = #{record.permission,jdbcType=INTEGER},
       address = #{record.address,jdbcType=VARCHAR},
+<<<<<<< HEAD
       mailbox = #{record.mailbox,jdbcType=VARCHAR},
       no = #{record.no,jdbcType=VARCHAR}
+=======
+      mailbox = #{record.mailbox,jdbcType=VARCHAR}
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -283,9 +312,12 @@
       <if test="mailbox != null" >
         mailbox = #{mailbox,jdbcType=VARCHAR},
       </if>
+<<<<<<< HEAD
       <if test="no != null" >
         no = #{no,jdbcType=VARCHAR},
       </if>
+=======
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728
     </set>
     where account = #{account,jdbcType=VARCHAR}
   </update>
@@ -299,8 +331,12 @@
       school = #{school,jdbcType=VARCHAR},
       permission = #{permission,jdbcType=INTEGER},
       address = #{address,jdbcType=VARCHAR},
+<<<<<<< HEAD
       mailbox = #{mailbox,jdbcType=VARCHAR},
       no = #{no,jdbcType=VARCHAR}
+=======
+      mailbox = #{mailbox,jdbcType=VARCHAR}
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728
     where account = #{account,jdbcType=VARCHAR}
   </update>
 </mapper>

@@ -783,6 +783,7 @@ public class UserExample {
             addCriterion("mailbox not between", value1, value2, "mailbox");
             return (Criteria) this;
         }
+<<<<<<< HEAD
 
         public Criteria andNoIsNull() {
             addCriterion("no is null");
@@ -853,6 +854,8 @@ public class UserExample {
             addCriterion("no not between", value1, value2, "no");
             return (Criteria) this;
         }
+=======
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728
     }
 
     public static class Criteria extends GeneratedCriteria {

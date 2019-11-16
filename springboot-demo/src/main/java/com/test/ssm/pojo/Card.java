@@ -1,9 +1,18 @@
 package com.test.ssm.pojo;
+<<<<<<< HEAD
 
 import java.util.List;
 
 public class Card {
     private String cardid;
+=======
+/*
+ * 家教类
+ */
+public class Card {
+    //status  0是发布的，1是接单的，2是已完成的
+	private String cardid;
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728
 
     private String account;
 
@@ -25,6 +34,7 @@ public class Card {
 
     private Integer status;
 
+<<<<<<< HEAD
     private List<Order> order;
     
     
@@ -38,6 +48,9 @@ public class Card {
 	}
 
 	public String getCardid() {
+=======
+    public String getCardid() {
+>>>>>>> 801bf36b6f521930cd2e4be05c30078d1378f728
         return cardid;
     }
 
